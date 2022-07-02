@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 1) 50%, rgb(48, 211, 240) 50%);
+    height: 100vh;
+    width: 100%;
+}
+section{
+    width:30vw;
+    height: 8vh;
+    display: flex;
+    position: relative;
+    left: 100px;
+}
+section ul{
+    list-style: none;
+    display: flex;
+    width:0vw;
+    background-color: white;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;  
+}
+section ul li{
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+}
+div {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 1);
+    height: 8vh;
+    width:4vw;
+    transition: all 1s linear;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+}
+div .spans{
+    height: 25px;
+    width: 35px;
+    box-shadow: none;
+} 
+div .one{
+    background-color: red;
+    width: 20px;
+    height: 3px; 
+    margin:5px;  
+    transition: all 0.5s;
+    position: relative;
+}
+div .two{
+    background-color: blue;
+    width: 20px;
+    height: 3px;
+}  
+section .show{
+    width: 26vw;
+}
+div .show1{
+    animation: anim 1s linear 1;
+    transform: rotate(47deg);
+    position: relative;
+    top: 1px;
+}
+div .show2{
+    animation: anim1 1s linear 1;
+    transform: rotate(-50deg);
+    position: relative;
+    bottom: 7px;
+ }
+@keyframes anim{
+    0%{
+        transform: rotate(30deg);
+    }
+    30%{
+        transform: rotate(340deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    60%{
+        transform: rotate(180deg);
+
+    }
+    80%{
+        transform: rotate(300deg);
+    }
+ 100%{
+        transform: rotate(40deg);
+    }
+}
+
+@keyframes anim1{
+    0%{
+        transform: rotate(90deg);
+    }
+    30%{
+        transform: rotate(300deg);
+    }
+    50%{
+        transform: rotate(60deg);
+    }
+    60%{
+        transform: rotate(90deg);
+
+    }
+    80%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(40deg);
+    }
+}
